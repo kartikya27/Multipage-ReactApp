@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from "react-router-dom";
 import './index.css';
 import App from './App';
 import PageTitle from './pageElements/PageTitle';
@@ -9,8 +10,8 @@ ReactDOM.render(<PageTitle/>,document.getElementById('page__title'));
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,document.getElementById('web__content'));
+  </BrowserRouter>,document.getElementById('web__content'));
 
 
